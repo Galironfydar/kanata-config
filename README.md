@@ -9,7 +9,11 @@ git clone https://github.com/galironfydar/kanata-config.git C:\Users\$env:USERNA
 To install Kanata as a service, execute the `install-kanata.ps1` script with administrator privileges:
 
 ```powershell
-C:\Users\$env:USERNAME\AppData\Roaming\kanata\install-kanata.ps1
+# Using PowerShell environment variable expansion:
+& "$env:USERPROFILE\AppData\Roaming\kanata\install-kanata.ps1"
+
+# Or if you're in the kanata directory:
+.\install-kanata.ps1
 ```
 
 This script performs the following actions:
@@ -23,7 +27,11 @@ This script performs the following actions:
 To remove Kanata from your system, execute the `uninstall-kanata.ps1` script with administrator privileges:
 
 ```powershell
-C:\Users\$env:USERNAME\AppData\Roaming\kanata\uninstall-kanata.ps1
+# Using PowerShell environment variable expansion:
+& "$env:USERPROFILE\AppData\Roaming\kanata\uninstall-kanata.ps1"
+
+# Or if you're in the kanata directory:
+.\uninstall-kanata.ps1
 ```
 
 This script will:
