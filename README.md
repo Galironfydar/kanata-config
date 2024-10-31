@@ -1,2 +1,7 @@
 # kanata-config
-Kanata COnfig
+Kanata Config
+
+```curl
+cargo install kanata
+```
+
