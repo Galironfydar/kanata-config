@@ -1,0 +1,2 @@
+# kanata-config
+Kanata COnfig
